@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MKMainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end
 
