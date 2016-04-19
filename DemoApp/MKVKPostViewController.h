@@ -1,5 +1,5 @@
 //
-//  MKFBNavigationViewController.h
+//  MKFBPostViewController.h
 //  DemoApp
 //
 //  Created by Max Kalahur on 18.04.16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MKFBNavigationViewController : UINavigationController
+@interface MKVKPostViewController : UIViewController
 
 @end

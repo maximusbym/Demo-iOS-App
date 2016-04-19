@@ -6,18 +6,16 @@
 //  Copyright © 2016 Max Kalahur. All rights reserved.
 //
 
-#import "MKFBTableViewController.h"
+#import "MKVKTableViewController.h"
 #import "SWRevealViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import "MKFBLoginViewController.h"
+#import "MKVKLoginViewController.h"
 
-@interface MKFBTableViewController ()
+@interface MKVKTableViewController ()
 
 
 @end
 
-@implementation MKFBTableViewController
+@implementation MKVKTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,24 +29,12 @@
     }
     
     
-    FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
-                                  initWithGraphPath:@"/me/feed"
-                                  parameters:@{@"fields": @"id"}
-                                  HTTPMethod:@"GET"];
-    [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
-                                          id result,
-                                          NSError *error) {
-        NSLog(@"%@",connection);
-        NSLog(@"%@",result);
-        NSLog(@"%@",error);
-    }];
-    
     
 }
 
-- (IBAction)fbLogOut:(id)sender {
-    [[FBSDKLoginManager new] logOut];
-    [[self navigationController] performSegueWithIdentifier:@"FBLogin" sender:nil];
+- (IBAction)vkLogOut:(id)sender {
+    
+    [[self navigationController] performSegueWithIdentifier:@"VKLogin" sender:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "MKDataManager.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <VKSdk.h>
+#import "MKVKDelegate.h"
+#import "MKVKLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,21 +20,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
+    VKSdk *sdkInstance = [VKSdk initializeWithAppId:@"5423639"];
+    MKVKDelegate *VKDelegate = [[MKVKDelegate alloc] init];
+    MKVKLoginViewController *VKUIDelegate = [[MKVKLoginViewController alloc] init];
+    if ([VKSdk initialized])
+    {
+        [sdkInstance registerDelegate: VKDelegate];
+        [sdkInstance setUiDelegate: VKUIDelegate];
+        
+        
+        NSLog(@"Success VK");
+    }
+
     
     NSLog(@"App is running");
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                                  openURL:url
-                                                        sourceApplication:sourceApplication
-                                                               annotation:annotation
-                    ];
-    // Add any custom logic here.
-    return handled;
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    [VKSdk processOpenURL:url fromApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -51,7 +58,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [FBSDKAppEvents activateApp];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

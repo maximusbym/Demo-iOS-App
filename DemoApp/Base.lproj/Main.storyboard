@@ -137,15 +137,15 @@
                                     <segue destination="Qfr-ze-TQv" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="f9r-HW-37l"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fb" id="S93-De-KKV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="vk" id="S93-De-KKV" userLabel="vk">
                                 <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S93-De-KKV" id="MhA-fq-gVL">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FaceBook Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXa-L3-c7a">
-                                            <rect key="frame" x="8" y="11" width="147" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VK Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXa-L3-c7a">
+                                            <rect key="frame" x="8" y="11" width="94" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -296,7 +296,7 @@
         <!--Table View Controller-->
         <scene sceneID="CSt-CL-KBA">
             <objects>
-                <tableViewController id="pok-F7-Veb" customClass="MKFBTableViewController" sceneMemberID="viewController">
+                <tableViewController id="pok-F7-Veb" customClass="MKVKTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1EM-cE-c4b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,7 +326,7 @@
                             </barButtonItem>
                             <barButtonItem title="Log Out" id="dnd-Dm-pct">
                                 <connections>
-                                    <action selector="fbLogOut:" destination="pok-F7-Veb" id="rY3-B0-WgB"/>
+                                    <action selector="vkLogOut:" destination="pok-F7-Veb" id="Gdp-vg-dtQ"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -343,7 +343,7 @@
         <!--Post View Controller-->
         <scene sceneID="yeT-iy-jsj">
             <objects>
-                <viewController id="cW2-zb-9UA" customClass="MKFBPostViewController" sceneMemberID="viewController">
+                <viewController id="cW2-zb-9UA" customClass="MKVKPostViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GQh-gX-Hxa"/>
                         <viewControllerLayoutGuide type="bottom" id="Rxt-db-k4z"/>
@@ -384,7 +384,7 @@
         <!--Login View Controller-->
         <scene sceneID="Sfa-g4-83b">
             <objects>
-                <viewController id="WpE-sv-Dev" customClass="MKFBLoginViewController" sceneMemberID="viewController">
+                <viewController id="WpE-sv-Dev" customClass="MKVKLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SJI-As-pMx"/>
                         <viewControllerLayoutGuide type="bottom" id="rle-lY-t1v"/>
@@ -400,7 +400,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="sidebarButton" destination="WZY-YG-rcg" id="rkq-WA-5Ja"/>
-                        <segue destination="pok-F7-Veb" kind="show" identifier="FBPosts" animates="NO" id="cFX-3Z-fxL"/>
+                        <segue destination="pok-F7-Veb" kind="show" identifier="VKPosts" animates="NO" id="cFX-3Z-fxL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1f-JU-vK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -410,15 +410,15 @@
         <!--Navigation View Controller-->
         <scene sceneID="j2q-gd-qvb">
             <objects>
-                <navigationController id="6bI-yC-bTe" customClass="MKFBNavigationViewController" sceneMemberID="viewController">
+                <navigationController id="6bI-yC-bTe" customClass="MKVKNavigationViewController" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2no-fq-hYd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pok-F7-Veb" kind="show" identifier="FBPosts" id="025-XD-2h1"/>
-                        <segue destination="WpE-sv-Dev" kind="show" identifier="FBLogin" id="XnL-bh-2ni"/>
+                        <segue destination="pok-F7-Veb" kind="show" identifier="VKPosts" id="025-XD-2h1"/>
+                        <segue destination="WpE-sv-Dev" kind="show" identifier="VKLogin" id="XnL-bh-2ni"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9y-S7-70a" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,8 +503,8 @@
         <image name="menu.png" width="28" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pln-Uu-b4M"/>
         <segue reference="Vlg-py-R0G"/>
+        <segue reference="Pln-Uu-b4M"/>
         <segue reference="cFX-3Z-fxL"/>
     </inferredMetricsTieBreakers>
 </document>

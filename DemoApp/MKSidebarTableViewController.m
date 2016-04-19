@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.menuItems = [NSArray arrayWithObjects: @"main", @"map", @"notes", @"fb", @"web", nil];
+    self.menuItems = [NSArray arrayWithObjects: @"main", @"map", @"notes", @"vk", @"web", nil];
 }
 
 - (void)didReceiveMemoryWarning {

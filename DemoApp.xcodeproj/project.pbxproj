@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D00CD7F1CC5488900566FCD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00CD7E1CC5488900566FCD /* FBSDKCoreKit.framework */; };
-		4D00CD821CC54FC000566FCD /* MKFBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD811CC54FC000566FCD /* MKFBTableViewController.m */; };
-		4D00CD851CC5501000566FCD /* MKFBPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD841CC5501000566FCD /* MKFBPostViewController.m */; };
-		4D00CD871CC5507D00566FCD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00CD861CC5507D00566FCD /* FBSDKLoginKit.framework */; };
-		4D00CD8D1CC5523E00566FCD /* MKFBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD8C1CC5523E00566FCD /* MKFBLoginViewController.m */; };
-		4D00CD901CC56E6C00566FCD /* MKFBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD8F1CC56E6C00566FCD /* MKFBNavigationViewController.m */; };
+		2CB519695D82633C0130832E /* libPods-DemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A72D8235D74C7DC87484FA5E /* libPods-DemoApp.a */; };
+		4D00CD821CC54FC000566FCD /* MKVKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD811CC54FC000566FCD /* MKVKTableViewController.m */; };
+		4D00CD851CC5501000566FCD /* MKVKPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD841CC5501000566FCD /* MKVKPostViewController.m */; };
+		4D00CD8D1CC5523E00566FCD /* MKVKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD8C1CC5523E00566FCD /* MKVKLoginViewController.m */; };
+		4D00CD901CC56E6C00566FCD /* MKVKNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD8F1CC56E6C00566FCD /* MKVKNavigationViewController.m */; };
+		4D0313E41CC66396009A0685 /* MKVKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0313E31CC66396009A0685 /* MKVKDelegate.m */; };
+		4D0313E61CC670CF009A0685 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0313E51CC670CF009A0685 /* SafariServices.framework */; };
 		4D13AD581CC4D81B00261C51 /* MKNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13AD571CC4D81B00261C51 /* MKNotesViewController.m */; };
 		4D13AD5B1CC4F97600261C51 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 4D13AD591CC4F97600261C51 /* AFNetworking */; };
 		4D13AD5C1CC4F97600261C51 /* UIKit+AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 4D13AD5A1CC4F97600261C51 /* UIKit+AFNetworking */; };
@@ -60,16 +61,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D00CD7E1CC5488900566FCD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-20160412/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		4D00CD801CC54FC000566FCD /* MKFBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFBTableViewController.h; sourceTree = "<group>"; };
-		4D00CD811CC54FC000566FCD /* MKFBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFBTableViewController.m; sourceTree = "<group>"; };
-		4D00CD831CC5501000566FCD /* MKFBPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFBPostViewController.h; sourceTree = "<group>"; };
-		4D00CD841CC5501000566FCD /* MKFBPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFBPostViewController.m; sourceTree = "<group>"; };
-		4D00CD861CC5507D00566FCD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		4D00CD8B1CC5523E00566FCD /* MKFBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFBLoginViewController.h; sourceTree = "<group>"; };
-		4D00CD8C1CC5523E00566FCD /* MKFBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFBLoginViewController.m; sourceTree = "<group>"; };
-		4D00CD8E1CC56E6C00566FCD /* MKFBNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFBNavigationViewController.h; sourceTree = "<group>"; };
-		4D00CD8F1CC56E6C00566FCD /* MKFBNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFBNavigationViewController.m; sourceTree = "<group>"; };
+		38D2CB439A8E2E52EB377F77 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		40F03144E14C7340CAA67543 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D00CD801CC54FC000566FCD /* MKVKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKVKTableViewController.h; sourceTree = "<group>"; };
+		4D00CD811CC54FC000566FCD /* MKVKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKVKTableViewController.m; sourceTree = "<group>"; };
+		4D00CD831CC5501000566FCD /* MKVKPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKVKPostViewController.h; sourceTree = "<group>"; };
+		4D00CD841CC5501000566FCD /* MKVKPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKVKPostViewController.m; sourceTree = "<group>"; };
+		4D00CD8B1CC5523E00566FCD /* MKVKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKVKLoginViewController.h; sourceTree = "<group>"; };
+		4D00CD8C1CC5523E00566FCD /* MKVKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKVKLoginViewController.m; sourceTree = "<group>"; };
+		4D00CD8E1CC56E6C00566FCD /* MKVKNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKVKNavigationViewController.h; sourceTree = "<group>"; };
+		4D00CD8F1CC56E6C00566FCD /* MKVKNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKVKNavigationViewController.m; sourceTree = "<group>"; };
+		4D0313E21CC66396009A0685 /* MKVKDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKVKDelegate.h; sourceTree = "<group>"; };
+		4D0313E31CC66396009A0685 /* MKVKDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKVKDelegate.m; sourceTree = "<group>"; };
+		4D0313E51CC670CF009A0685 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		4D13AD561CC4D81B00261C51 /* MKNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNotesViewController.h; sourceTree = "<group>"; };
 		4D13AD571CC4D81B00261C51 /* MKNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNotesViewController.m; sourceTree = "<group>"; };
 		4D13AD591CC4F97600261C51 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AFNetworking; path = "../../../../Downloads/AFNetworking-master/AFNetworking"; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		4DFCD9D51CB5634A009B22F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DFCD9E31CB5713D009B22F9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		4DFCD9E41CB5713D009B22F9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		A72D8235D74C7DC87484FA5E /* libPods-DemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +128,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0313E61CC670CF009A0685 /* SafariServices.framework in Frameworks */,
 				4DE517701CB8425800B1F101 /* CoreData.framework in Frameworks */,
-				4D00CD7F1CC5488900566FCD /* FBSDKCoreKit.framework in Frameworks */,
-				4D00CD871CC5507D00566FCD /* FBSDKLoginKit.framework in Frameworks */,
 				4DA016591CB66331006670BE /* MapKit.framework in Frameworks */,
+				2CB519695D82633C0130832E /* libPods-DemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,10 +164,10 @@
 		4DA0165A1CB6635A006670BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D00CD861CC5507D00566FCD /* FBSDKLoginKit.framework */,
-				4D00CD7E1CC5488900566FCD /* FBSDKCoreKit.framework */,
+				4D0313E51CC670CF009A0685 /* SafariServices.framework */,
 				4DE5176F1CB8425800B1F101 /* CoreData.framework */,
 				4DA016581CB66331006670BE /* MapKit.framework */,
+				A72D8235D74C7DC87484FA5E /* libPods-DemoApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				4DFCD9D21CB5634A009B22F9 /* DemoAppUITests */,
 				4DFCD9A91CB5634A009B22F9 /* Products */,
 				4DA0165A1CB6635A006670BE /* Frameworks */,
+				5575F968CBB690F0D4BFB8B8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,14 +217,16 @@
 				4D9998541CB6E08600760156 /* MKNotesTableViewController.m */,
 				4D13AD561CC4D81B00261C51 /* MKNotesViewController.h */,
 				4D13AD571CC4D81B00261C51 /* MKNotesViewController.m */,
-				4D00CD801CC54FC000566FCD /* MKFBTableViewController.h */,
-				4D00CD811CC54FC000566FCD /* MKFBTableViewController.m */,
-				4D00CD831CC5501000566FCD /* MKFBPostViewController.h */,
-				4D00CD841CC5501000566FCD /* MKFBPostViewController.m */,
-				4D00CD8B1CC5523E00566FCD /* MKFBLoginViewController.h */,
-				4D00CD8C1CC5523E00566FCD /* MKFBLoginViewController.m */,
-				4D00CD8E1CC56E6C00566FCD /* MKFBNavigationViewController.h */,
-				4D00CD8F1CC56E6C00566FCD /* MKFBNavigationViewController.m */,
+				4D00CD801CC54FC000566FCD /* MKVKTableViewController.h */,
+				4D00CD811CC54FC000566FCD /* MKVKTableViewController.m */,
+				4D00CD831CC5501000566FCD /* MKVKPostViewController.h */,
+				4D00CD841CC5501000566FCD /* MKVKPostViewController.m */,
+				4D00CD8B1CC5523E00566FCD /* MKVKLoginViewController.h */,
+				4D00CD8C1CC5523E00566FCD /* MKVKLoginViewController.m */,
+				4D00CD8E1CC56E6C00566FCD /* MKVKNavigationViewController.h */,
+				4D00CD8F1CC56E6C00566FCD /* MKVKNavigationViewController.m */,
+				4D0313E21CC66396009A0685 /* MKVKDelegate.h */,
+				4D0313E31CC66396009A0685 /* MKVKDelegate.m */,
 				4DFCD9B41CB5634A009B22F9 /* Main.storyboard */,
 				4DFCD9BA1CB5634A009B22F9 /* Assets.xcassets */,
 				4DFCD9BC1CB5634A009B22F9 /* LaunchScreen.storyboard */,
@@ -281,6 +289,15 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		5575F968CBB690F0D4BFB8B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40F03144E14C7340CAA67543 /* Pods-DemoApp.debug.xcconfig */,
+				38D2CB439A8E2E52EB377F77 /* Pods-DemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,9 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DFCD9D81CB5634A009B22F9 /* Build configuration list for PBXNativeTarget "DemoApp" */;
 			buildPhases = (
+				7AC38885F8A4EE640C56672F /* Check Pods Manifest.lock */,
 				4DFCD9A41CB5634A009B22F9 /* Sources */,
 				4DFCD9A51CB5634A009B22F9 /* Frameworks */,
 				4DFCD9A61CB5634A009B22F9 /* Resources */,
+				DB6D9F7F4D17D22DFA9119EB /* Embed Pods Frameworks */,
+				0D476B7D51B6C46E448585BA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,6 +431,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D476B7D51B6C46E448585BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC38885F8A4EE640C56672F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6D9F7F4D17D22DFA9119EB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DFCD9A41CB5634A009B22F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -418,19 +486,20 @@
 			files = (
 				4DA016621CB66C7F006670BE /* MKMapAnnotation.m in Sources */,
 				4DE517791CB8449000B1F101 /* MKNote.m in Sources */,
-				4D00CD8D1CC5523E00566FCD /* MKFBLoginViewController.m in Sources */,
+				4D00CD8D1CC5523E00566FCD /* MKVKLoginViewController.m in Sources */,
 				4DFCD9B31CB5634A009B22F9 /* MKMainViewController.m in Sources */,
 				4DA016571CB65E4B006670BE /* MKSidebarTableViewController.m in Sources */,
 				4DFCD9B01CB5634A009B22F9 /* AppDelegate.m in Sources */,
 				4D9998551CB6E08600760156 /* MKNotesTableViewController.m in Sources */,
 				4DFCD9E51CB5713D009B22F9 /* SWRevealViewController.m in Sources */,
 				4D13AD581CC4D81B00261C51 /* MKNotesViewController.m in Sources */,
-				4D00CD851CC5501000566FCD /* MKFBPostViewController.m in Sources */,
+				4D00CD851CC5501000566FCD /* MKVKPostViewController.m in Sources */,
 				4DA0165F1CB6672E006670BE /* MKDataManager.m in Sources */,
 				4DA016651CB67AF4006670BE /* MKMapDataManager.m in Sources */,
 				4DE517781CB8449000B1F101 /* MKNote+CoreDataProperties.m in Sources */,
-				4D00CD821CC54FC000566FCD /* MKFBTableViewController.m in Sources */,
-				4D00CD901CC56E6C00566FCD /* MKFBNavigationViewController.m in Sources */,
+				4D0313E41CC66396009A0685 /* MKVKDelegate.m in Sources */,
+				4D00CD821CC54FC000566FCD /* MKVKTableViewController.m in Sources */,
+				4D00CD901CC56E6C00566FCD /* MKVKNavigationViewController.m in Sources */,
 				4DFCD9B91CB5634A009B22F9 /* DemoApp.xcdatamodeld in Sources */,
 				4D9998581CB6E0B200760156 /* MKNotesDataManager.m in Sources */,
 				4DFCD9AD1CB5634A009B22F9 /* main.m in Sources */,
@@ -526,7 +595,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +636,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,71 +648,131 @@
 		};
 		4DFCD9D91CB5634A009B22F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F03144E14C7340CAA67543 /* Pods-DemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "/Users/maxkalahur/Documents/FacebookSDK ";
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"",
+				);
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"VK-ios-sdk\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = maxkalagur.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 			};
 			name = Debug;
 		};
 		4DFCD9DA1CB5634A009B22F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38D2CB439A8E2E52EB377F77 /* Pods-DemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "/Users/maxkalahur/Documents/FacebookSDK ";
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"",
+				);
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"VK-ios-sdk\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = maxkalagur.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 			};
 			name = Release;
 		};
 		4DFCD9DC1CB5634A009B22F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				INFOPLIST_FILE = DemoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				PRODUCT_BUNDLE_IDENTIFIER = maxkalagur.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 			};
 			name = Debug;
 		};
 		4DFCD9DD1CB5634A009B22F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				INFOPLIST_FILE = DemoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				PRODUCT_BUNDLE_IDENTIFIER = maxkalagur.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 			};
 			name = Release;
 		};
 		4DFCD9DF1CB5634A009B22F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				INFOPLIST_FILE = DemoAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				PRODUCT_BUNDLE_IDENTIFIER = maxkalagur.DemoAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = DemoApp;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 			};
 			name = Debug;
 		};
 		4DFCD9E01CB5634A009B22F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				INFOPLIST_FILE = DemoAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 				PRODUCT_BUNDLE_IDENTIFIER = maxkalagur.DemoAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = DemoApp;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/VK-ios-sdk\"";
 			};
 			name = Release;
 		};

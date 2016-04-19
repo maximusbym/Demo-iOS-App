@@ -6,13 +6,13 @@
 //  Copyright © 2016 Max Kalahur. All rights reserved.
 //
 
-#import "MKFBPostViewController.h"
+#import "MKVKPostViewController.h"
 
-@interface MKFBPostViewController ()
+@interface MKVKPostViewController ()
 
 @end
 
-@implementation MKFBPostViewController
+@implementation MKVKPostViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

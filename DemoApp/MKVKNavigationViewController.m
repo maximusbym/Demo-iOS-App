@@ -6,26 +6,30 @@
 //  Copyright © 2016 Max Kalahur. All rights reserved.
 //
 
-#import "MKFBNavigationViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import "MKFBTableViewController.h"
+#import "MKVKNavigationViewController.h"
+#import "MKVKTableViewController.h"
+#import <VKSdk.h>
 
-@interface MKFBNavigationViewController ()
+@interface MKVKNavigationViewController ()
 
 @end
 
-@implementation MKFBNavigationViewController
+@implementation MKVKNavigationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([FBSDKAccessToken currentAccessToken]) {
-        [self performSegueWithIdentifier:@"FBPosts" sender:nil];
-        
-    }
-    else {
-        [self performSegueWithIdentifier:@"FBLogin" sender:nil];
-    }
+    NSArray *scope = @[@"friends", @"wall"];
+    
+    [VKSdk wakeUpSession:scope completeBlock:^(VKAuthorizationState state, NSError *error) {
+
+        if (state == VKAuthorizationAuthorized) {
+            [self performSegueWithIdentifier:@"VKPosts" sender:nil];
+        }
+        else {
+            [self performSegueWithIdentifier:@"VKLogin" sender:nil];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

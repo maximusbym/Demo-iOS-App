@@ -6,15 +6,17 @@
 //  Copyright © 2016 Max Kalahur. All rights reserved.
 //
 
-#import "MKFBLoginViewController.h"
-#import "MKFBTableViewController.h"
+#import "MKVKLoginViewController.h"
+#import "MKVKTableViewController.h"
 #import "SWRevealViewController.h"
+#import "VKAuthorizeController.h"
+#import "VKRequestsScheduler.h"
 
-@interface MKFBLoginViewController ()
+@interface MKVKLoginViewController ()
 
 @end
 
-@implementation MKFBLoginViewController
+@implementation MKVKLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,27 +29,32 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
     
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    NSArray *scope = @[@"friends", @"wall"];
     
-    loginButton.delegate = self;
-    loginButton.readPermissions = @[@"public_profile", @"user_friends", @"email", @"user_posts"];
-    loginButton.publishPermissions = @[@"publish_actions"];
-    loginButton.center = self.view.center;
-    [self.view addSubview:loginButton];
-}
-
-- (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
-                error:(NSError *)error {
-    if( result.token ) {
-        [self performSegueWithIdentifier:@"FBPosts" sender:nil];
-    }
-}
-
-- (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
+    [VKSdk wakeUpSession:scope completeBlock:^(VKAuthorizationState state, NSError *error) {
+        
+        if (state == VKAuthorizationInitialized) {
+            
+            [VKSdk authorize:scope];
+            
+        } else {
+            
+            
+        }
+    }];
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+
+
+- (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
+    
+    NSLog(@"HYI");
+    
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
+- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
     
 }
 

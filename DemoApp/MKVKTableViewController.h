@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MKFBTableViewController : UITableViewController
+@interface MKVKTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
-- (IBAction)fbLogOut:(id)sender;
+- (IBAction)vkLogOut:(id)sender;
 
 @end
