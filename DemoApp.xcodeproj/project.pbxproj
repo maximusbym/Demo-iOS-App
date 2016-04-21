@@ -12,7 +12,7 @@
 		4D00CD851CC5501000566FCD /* MKVKPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD841CC5501000566FCD /* MKVKPostViewController.m */; };
 		4D00CD8D1CC5523E00566FCD /* MKVKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD8C1CC5523E00566FCD /* MKVKLoginViewController.m */; };
 		4D00CD901CC56E6C00566FCD /* MKVKNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00CD8F1CC56E6C00566FCD /* MKVKNavigationViewController.m */; };
-		4D0313E61CC670CF009A0685 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0313E51CC670CF009A0685 /* SafariServices.framework */; };
+		4D0313E61CC670CF009A0685 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0313E51CC670CF009A0685 /* SafariServices.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4D13AD581CC4D81B00261C51 /* MKNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13AD571CC4D81B00261C51 /* MKNotesViewController.m */; };
 		4D9998551CB6E08600760156 /* MKNotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9998541CB6E08600760156 /* MKNotesTableViewController.m */; };
 		4DA016501CB658B7006670BE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA0164E1CB658B7006670BE /* menu.png */; };
