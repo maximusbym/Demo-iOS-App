@@ -24,8 +24,9 @@
 		4DA0165F1CB6672E006670BE /* MKDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA0165E1CB6672E006670BE /* MKDataManager.m */; };
 		4DA016621CB66C7F006670BE /* MKMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA016611CB66C7F006670BE /* MKMapAnnotation.m */; };
 		4DA016651CB67AF4006670BE /* MKMapDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA016641CB67AF4006670BE /* MKMapDataManager.m */; };
-		4DB3EA991CC7A9E600CFC547 /* MKPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3EA981CC7A9E600CFC547 /* MKPostCell.m */; };
 		4DB3EA9C1CC7AB3400CFC547 /* MKPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3EA9B1CC7AB3400CFC547 /* MKPost.m */; };
+		4DC41A9A1CC8E013005F2FA9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC41A991CC8E013005F2FA9 /* SWRevealViewController.m */; };
+		4DC41A9D1CC8E0C3005F2FA9 /* MKPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC41A9C1CC8E0C3005F2FA9 /* MKPostCell.m */; };
 		4DE517701CB8425800B1F101 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE5176F1CB8425800B1F101 /* CoreData.framework */; };
 		4DE517781CB8449000B1F101 /* MKNote+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE517751CB8449000B1F101 /* MKNote+CoreDataProperties.m */; };
 		4DE517791CB8449000B1F101 /* MKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE517771CB8449000B1F101 /* MKNote.m */; };
@@ -38,7 +39,6 @@
 		4DFCD9BE1CB5634A009B22F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFCD9BC1CB5634A009B22F9 /* LaunchScreen.storyboard */; };
 		4DFCD9C91CB5634A009B22F9 /* DemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCD9C81CB5634A009B22F9 /* DemoAppTests.m */; };
 		4DFCD9D41CB5634A009B22F9 /* DemoAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCD9D31CB5634A009B22F9 /* DemoAppUITests.m */; };
-		4DFCD9E51CB5713D009B22F9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCD9E41CB5713D009B22F9 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,10 +88,12 @@
 		4DA016611CB66C7F006670BE /* MKMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapAnnotation.m; sourceTree = "<group>"; };
 		4DA016631CB67AF4006670BE /* MKMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapDataManager.h; sourceTree = "<group>"; };
 		4DA016641CB67AF4006670BE /* MKMapDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapDataManager.m; sourceTree = "<group>"; };
-		4DB3EA971CC7A9E600CFC547 /* MKPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPostCell.h; sourceTree = "<group>"; };
-		4DB3EA981CC7A9E600CFC547 /* MKPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPostCell.m; sourceTree = "<group>"; };
 		4DB3EA9A1CC7AB3400CFC547 /* MKPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPost.h; sourceTree = "<group>"; };
 		4DB3EA9B1CC7AB3400CFC547 /* MKPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPost.m; sourceTree = "<group>"; };
+		4DC41A981CC8E013005F2FA9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		4DC41A991CC8E013005F2FA9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		4DC41A9B1CC8E0C3005F2FA9 /* MKPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPostCell.h; path = DemoApp/MKPostCell.h; sourceTree = "<group>"; };
+		4DC41A9C1CC8E0C3005F2FA9 /* MKPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKPostCell.m; path = DemoApp/MKPostCell.m; sourceTree = "<group>"; };
 		4DE5176F1CB8425800B1F101 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4DE517741CB8449000B1F101 /* MKNote+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNote+CoreDataProperties.h"; sourceTree = "<group>"; };
 		4DE517751CB8449000B1F101 /* MKNote+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKNote+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -114,8 +116,6 @@
 		4DFCD9CF1CB5634A009B22F9 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFCD9D31CB5634A009B22F9 /* DemoAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppUITests.m; sourceTree = "<group>"; };
 		4DFCD9D51CB5634A009B22F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DFCD9E31CB5713D009B22F9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
-		4DFCD9E41CB5713D009B22F9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		A72D8235D74C7DC87484FA5E /* libPods-DemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,8 +171,8 @@
 		4DB3EA961CC7A9C900CFC547 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4DB3EA971CC7A9E600CFC547 /* MKPostCell.h */,
-				4DB3EA981CC7A9E600CFC547 /* MKPostCell.m */,
+				4DC41A9B1CC8E0C3005F2FA9 /* MKPostCell.h */,
+				4DC41A9C1CC8E0C3005F2FA9 /* MKPostCell.m */,
 			);
 			name = Cells;
 			path = ..;
@@ -286,8 +286,8 @@
 		4DFCD9E11CB56919009B22F9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				4DFCD9E31CB5713D009B22F9 /* SWRevealViewController.h */,
-				4DFCD9E41CB5713D009B22F9 /* SWRevealViewController.m */,
+				4DC41A981CC8E013005F2FA9 /* SWRevealViewController.h */,
+				4DC41A991CC8E013005F2FA9 /* SWRevealViewController.m */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -506,10 +506,10 @@
 				4D00CD8D1CC5523E00566FCD /* MKVKLoginViewController.m in Sources */,
 				4DFCD9B31CB5634A009B22F9 /* MKMainViewController.m in Sources */,
 				4DA016571CB65E4B006670BE /* MKSidebarTableViewController.m in Sources */,
-				4DB3EA991CC7A9E600CFC547 /* MKPostCell.m in Sources */,
 				4DFCD9B01CB5634A009B22F9 /* MKAppDelegate.m in Sources */,
+				4DC41A9A1CC8E013005F2FA9 /* SWRevealViewController.m in Sources */,
+				4DC41A9D1CC8E0C3005F2FA9 /* MKPostCell.m in Sources */,
 				4D9998551CB6E08600760156 /* MKNotesTableViewController.m in Sources */,
-				4DFCD9E51CB5713D009B22F9 /* SWRevealViewController.m in Sources */,
 				4D13AD581CC4D81B00261C51 /* MKNotesViewController.m in Sources */,
 				4DB3EA9C1CC7AB3400CFC547 /* MKPost.m in Sources */,
 				4D00CD851CC5501000566FCD /* MKVKPostViewController.m in Sources */,
