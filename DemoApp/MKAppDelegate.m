@@ -6,11 +6,9 @@
 //  Copyright © 2016 Max Kalahur. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MKAppDelegate.h"
 #import "MKDataManager.h"
 #import <VKSdk.h>
-#import "MKVKDelegate.h"
-#import "MKVKLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,25 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    VKSdk *sdkInstance = [VKSdk initializeWithAppId:@"5423639"];
-    MKVKDelegate *VKDelegate = [[MKVKDelegate alloc] init];
-    MKVKLoginViewController *VKUIDelegate = [[MKVKLoginViewController alloc] init];
-    if ([VKSdk initialized])
-    {
-        [sdkInstance registerDelegate: VKDelegate];
-        [sdkInstance setUiDelegate: VKUIDelegate];
-        
-        
-        NSLog(@"Success VK");
-    }
-
+    [VKSdk initializeWithAppId:@"5423639"];
     
-    NSLog(@"App is running");
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
-    [VKSdk processOpenURL:url fromApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]];
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    [VKSdk processOpenURL:url fromApplication:sourceApplication];
+    
     return YES;
 }
 

@@ -10,4 +10,8 @@
 
 @interface MKVKPostViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextView *postTextItem;
+
+- (IBAction)sendPost:(id)sender;
+
 @end

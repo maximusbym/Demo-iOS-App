@@ -19,10 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *scope = @[@"friends", @"wall"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+   
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSArray *scope = @[VK_PER_FRIENDS, VK_PER_WALL];
     
     [VKSdk wakeUpSession:scope completeBlock:^(VKAuthorizationState state, NSError *error) {
-
+        
         if (state == VKAuthorizationAuthorized) {
             [self performSegueWithIdentifier:@"VKPosts" sender:nil];
         }

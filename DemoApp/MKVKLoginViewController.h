@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <VKSdk.h>
-#import <SafariServices/SafariServices.h>
 
-@interface MKVKLoginViewController : UIViewController <VKSdkUIDelegate>
+@interface MKVKLoginViewController : UIViewController <VKSdkDelegate>
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
-- (void)vkSdkShouldPresentViewController:(UIViewController *)controller;
+- (void)vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result;
 
-- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError;
+- (void)vkSdkUserAuthorizationFailed;
 
 @end

@@ -7,12 +7,15 @@
 //
 
 #import "MKVKPostViewController.h"
+#import <VKSdk.h>
 
 @interface MKVKPostViewController ()
 
 @end
 
 @implementation MKVKPostViewController
+
+@synthesize postTextItem;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,5 +36,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)sendPost:(id)sender {
+    
+    VKRequest *postReq = [[VKApi wall] post:@{VK_API_MESSAGE : self.postTextItem.text}];
+    [postReq executeWithResultBlock:^(VKResponse *response) {
+        NSLog(@"%@",response);
+        [[self navigationController] performSegueWithIdentifier:@"VKPosts" sender:self];
+    } errorBlock:^(NSError *error) {
+        
+    }];
+    
+    
+}
+
 
 @end
