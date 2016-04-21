@@ -15,8 +15,6 @@
 		4D0313E61CC670CF009A0685 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0313E51CC670CF009A0685 /* SafariServices.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4D13AD581CC4D81B00261C51 /* MKNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13AD571CC4D81B00261C51 /* MKNotesViewController.m */; };
 		4D9998551CB6E08600760156 /* MKNotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9998541CB6E08600760156 /* MKNotesTableViewController.m */; };
-		4DA016501CB658B7006670BE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA0164E1CB658B7006670BE /* menu.png */; };
-		4DA016511CB658B7006670BE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA0164F1CB658B7006670BE /* menu@2x.png */; };
 		4DA016541CB65BA4006670BE /* MKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA016531CB65BA4006670BE /* MKMapViewController.m */; };
 		4DA016571CB65E4B006670BE /* MKSidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA016561CB65E4B006670BE /* MKSidebarTableViewController.m */; };
 		4DA016591CB66331006670BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA016581CB66331006670BE /* MapKit.framework */; };
@@ -27,6 +25,8 @@
 		4DB3EA9C1CC7AB3400CFC547 /* MKPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3EA9B1CC7AB3400CFC547 /* MKPost.m */; };
 		4DC41A9A1CC8E013005F2FA9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC41A991CC8E013005F2FA9 /* SWRevealViewController.m */; };
 		4DC41A9D1CC8E0C3005F2FA9 /* MKPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC41A9C1CC8E0C3005F2FA9 /* MKPostCell.m */; };
+		4DC41AA01CC8E260005F2FA9 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC41A9E1CC8E260005F2FA9 /* menu.png */; };
+		4DC41AA11CC8E260005F2FA9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC41A9F1CC8E260005F2FA9 /* menu@2x.png */; };
 		4DE517701CB8425800B1F101 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE5176F1CB8425800B1F101 /* CoreData.framework */; };
 		4DE517781CB8449000B1F101 /* MKNote+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE517751CB8449000B1F101 /* MKNote+CoreDataProperties.m */; };
 		4DE517791CB8449000B1F101 /* MKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE517771CB8449000B1F101 /* MKNote.m */; };
@@ -74,8 +74,6 @@
 		4D13AD571CC4D81B00261C51 /* MKNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNotesViewController.m; sourceTree = "<group>"; };
 		4D9998531CB6E08500760156 /* MKNotesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNotesTableViewController.h; sourceTree = "<group>"; };
 		4D9998541CB6E08600760156 /* MKNotesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNotesTableViewController.m; sourceTree = "<group>"; };
-		4DA0164E1CB658B7006670BE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../../../Downloads/SidebarDemoTemplate/SidebarDemo/menu.png; sourceTree = "<group>"; };
-		4DA0164F1CB658B7006670BE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "../../../../Downloads/SidebarDemoTemplate/SidebarDemo/menu@2x.png"; sourceTree = "<group>"; };
 		4DA016521CB65BA4006670BE /* MKMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewController.h; sourceTree = "<group>"; };
 		4DA016531CB65BA4006670BE /* MKMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewController.m; sourceTree = "<group>"; };
 		4DA016551CB65E4B006670BE /* MKSidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSidebarTableViewController.h; sourceTree = "<group>"; };
@@ -94,6 +92,8 @@
 		4DC41A991CC8E013005F2FA9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4DC41A9B1CC8E0C3005F2FA9 /* MKPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPostCell.h; path = DemoApp/MKPostCell.h; sourceTree = "<group>"; };
 		4DC41A9C1CC8E0C3005F2FA9 /* MKPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKPostCell.m; path = DemoApp/MKPostCell.m; sourceTree = "<group>"; };
+		4DC41A9E1CC8E260005F2FA9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		4DC41A9F1CC8E260005F2FA9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		4DE5176F1CB8425800B1F101 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4DE517741CB8449000B1F101 /* MKNote+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNote+CoreDataProperties.h"; sourceTree = "<group>"; };
 		4DE517751CB8449000B1F101 /* MKNote+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKNote+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 		4DA0164D1CB65830006670BE /* img */ = {
 			isa = PBXGroup;
 			children = (
-				4DA0164E1CB658B7006670BE /* menu.png */,
-				4DA0164F1CB658B7006670BE /* menu@2x.png */,
+				4DC41A9E1CC8E260005F2FA9 /* menu.png */,
+				4DC41A9F1CC8E260005F2FA9 /* menu@2x.png */,
 			);
 			name = img;
 			sourceTree = "<group>";
@@ -423,10 +423,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DA016501CB658B7006670BE /* menu.png in Resources */,
 				4DA0165C1CB66626006670BE /* locations.plist in Resources */,
 				4DFCD9BE1CB5634A009B22F9 /* LaunchScreen.storyboard in Resources */,
-				4DA016511CB658B7006670BE /* menu@2x.png in Resources */,
+				4DC41AA01CC8E260005F2FA9 /* menu.png in Resources */,
+				4DC41AA11CC8E260005F2FA9 /* menu@2x.png in Resources */,
 				4DFCD9BB1CB5634A009B22F9 /* Assets.xcassets in Resources */,
 				4DFCD9B61CB5634A009B22F9 /* Main.storyboard in Resources */,
 			);
