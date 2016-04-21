@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -46,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="609.5" y="944.5"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Hello!-->
         <scene sceneID="iAt-Yt-LZ3">
             <objects>
                 <viewController id="wlV-3n-L4W" customClass="MKMainViewController" sceneMemberID="viewController">
@@ -67,7 +68,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EBP-u9-L08">
+                    <navigationItem key="navigationItem" title="Hello!" id="EBP-u9-L08">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="PHI-9M-Fl2"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -176,7 +177,7 @@
             </objects>
             <point key="canvasLocation" x="609.5" y="139.5"/>
         </scene>
-        <!--Notes Table View Controller-->
+        <!--Notes from DB-->
         <scene sceneID="rvX-qA-15H">
             <objects>
                 <tableViewController id="yF2-ao-PM0" customClass="MKNotesTableViewController" sceneMemberID="viewController">
@@ -212,7 +213,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="nUJ-Q2-vAH">
+                    <navigationItem key="navigationItem" title="Notes from DB" id="nUJ-Q2-vAH">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="Qxs-Tw-5ck"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lRQ-za-utP">
                             <connections>
@@ -305,7 +306,7 @@
             </objects>
             <point key="canvasLocation" x="1994.5" y="-596.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--My Posts-->
         <scene sceneID="CSt-CL-KBA">
             <objects>
                 <tableViewController id="pok-F7-Veb" customClass="MKVKTableViewController" sceneMemberID="viewController">
@@ -351,7 +352,7 @@
                             <outlet property="delegate" destination="pok-F7-Veb" id="4Ib-zk-TXx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oTh-Sw-8cO">
+                    <navigationItem key="navigationItem" title="My Posts" id="oTh-Sw-8cO">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="bvE-Eo-zPC"/>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="KYJ-li-a66">
@@ -511,7 +512,7 @@
             </objects>
             <point key="canvasLocation" x="1109.5" y="139.5"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Tap new dots-->
         <scene sceneID="SyC-ah-N0L">
             <objects>
                 <viewController id="poO-bO-V9x" customClass="MKMapViewController" sceneMemberID="viewController">
@@ -536,7 +537,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hBP-XK-4le">
+                    <navigationItem key="navigationItem" title="Tap new dots" id="hBP-XK-4le">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="nCr-mh-p0y"/>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
